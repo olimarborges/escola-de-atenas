@@ -9,6 +9,7 @@ Feito para a sala de matemática e geometria da semana da ciência e da filosofi
 - **Avançar e voltar:** setas, espaço ou passador de slides. No celular, deslize para o lado.
 - **Roteiro do apresentador:** tecla `N`.
 - **Tela cheia:** tecla `F`.
+- **Modo automático (para TV):** tecla `A` ou botão "Automático". Avança sozinho, em loop, com uma barra mostrando o tempo de cada parada. Qualquer navegação manual desliga. Para abrir já no automático, use o endereço terminado em `#auto`.
 - **Ir direto a uma parada:** teclas `1` a `9`, ou um link terminado em `#parada-10`, por exemplo.
 
 ## Textos
