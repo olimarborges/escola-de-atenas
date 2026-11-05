@@ -17,7 +17,7 @@ As explicações seguem a apostila *A Escola de Atenas: Arte, Filosofia e as Tra
 
 ## Como foi feito
 
-- A imagem da obra recebeu super-resolução por IA para ficar nítida nas aproximações.
+- A imagem da obra vem da foto de 2024 publicada no Wikimedia Commons (20.111 × 13.936 px, domínio público, Public Domain Mark), reduzida para 7.000 px e alinhada à cena.
 - A profundidade de cada ponto da pintura foi estimada com Depth Anything e calibrada pela arquitetura pintada, para que as figuras tenham relevo.
 - O fundo por trás das figuras foi reconstruído para que a câmera possa se mover sem deixar buracos.
 - A cena é renderizada com three.js. Tudo fica num único `index.html`, com as imagens embutidas.
