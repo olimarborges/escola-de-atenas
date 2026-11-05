@@ -1,6 +1,6 @@
 # Escola de Atenas em 3D
 
-Percurso interativo pela *Escola de Atenas*, afresco de Rafael Sanzio (1509 a 1511, Palácio Apostólico, Vaticano). A câmera entra na pintura e para diante de nove pontos: a obra, Heráclito, Pitágoras, Sócrates, Platão e Aristóteles, Diógenes, Zoroastro, Ptolomeu e Rafael, Euclides e, no fim, as linhas de perspectiva.
+Percurso interativo pela *Escola de Atenas*, afresco de Rafael Sanzio (1509 a 1511, Palácio Apostólico, Vaticano). A câmera entra na pintura e para diante de dez pontos: a obra, Heráclito, Pitágoras, Protágoras e os sofistas, Sócrates, Platão e Aristóteles, Diógenes, Ptolomeu com o globo celeste e Rafael, Euclides e, no fim, as linhas de perspectiva.
 
 Feito para a sala de matemática e geometria da semana da ciência e da filosofia da Acrópole.
 
@@ -9,16 +9,20 @@ Feito para a sala de matemática e geometria da semana da ciência e da filosofi
 - **Avançar e voltar:** setas, espaço ou passador de slides. No celular, deslize para o lado.
 - **Roteiro do apresentador:** tecla `N`.
 - **Tela cheia:** tecla `F`.
-- **Ir direto a uma parada:** teclas `1` a `9`, ou um link terminado em `#parada-5`, por exemplo.
+- **Ir direto a uma parada:** teclas `1` a `9`, ou um link terminado em `#parada-10`, por exemplo.
+
+## Textos
+
+As explicações seguem a apostila *A Escola de Atenas: Arte, Filosofia e as Tradições do Conhecimento* (Cristiano Born). Hipóteses do curso aparecem marcadas como hipóteses.
 
 ## Como foi feito
 
-- A linha desenhada sobre a foto foi removida com reconstrução de imagem (LaMa).
+- A imagem da obra recebeu super-resolução por IA para ficar nítida nas aproximações.
 - A profundidade de cada ponto da pintura foi estimada com Depth Anything e calibrada pela arquitetura pintada, para que as figuras tenham relevo.
 - O fundo por trás das figuras foi reconstruído para que a câmera possa se mover sem deixar buracos.
 - A cena é renderizada com three.js. Tudo fica num único `index.html`, com as imagens embutidas.
 
-As identificações dos personagens seguem a tradição dos estudiosos. Rafael não deixou legendas, e várias delas são discutidas.
+Rafael não deixou legendas: várias identificações de personagens são discutidas.
 
 ## Requisitos
 
