@@ -1,6 +1,11 @@
 # Escola de Atenas em 3D
 
-Percurso interativo pela *Escola de Atenas*, afresco de Rafael Sanzio (1509 a 1511, Palácio Apostólico, Vaticano). A câmera entra na pintura e para diante de dez pontos: a obra, Heráclito, Pitágoras, Protágoras e os sofistas, Sócrates, Platão e Aristóteles, Diógenes, Ptolomeu com o globo celeste e Rafael, Euclides e, no fim, as linhas de perspectiva.
+Percurso interativo pela *Escola de Atenas*, afresco de Rafael Sanzio (1509 a 1511, Palácio Apostólico, Vaticano). A câmera entra na pintura e para diante dos personagens.
+
+A página tem dois roteiros:
+
+- **Apresentação (padrão):** abertura e cinco atos. Uma escola que nunca existiu; Ato I, Pitágoras; Ato II, Sócrates; Ato III, Euclides; Ato IV, Hipátia de Alexandria; Ato V, Platão e Aristóteles. Endereço: `olimarborges.github.io/escola-de-atenas/`
+- **Percurso completo:** dez paradas, com Heráclito, Protágoras e os sofistas, Diógenes, Ptolomeu e o fim com as linhas de perspectiva. Endereço: `olimarborges.github.io/escola-de-atenas/#completo`
 
 Feito para a sala de matemática e geometria da semana da ciência e da filosofia da Acrópole.
 
@@ -9,8 +14,8 @@ Feito para a sala de matemática e geometria da semana da ciência e da filosofi
 - **Avançar e voltar:** setas, espaço ou passador de slides. No celular, deslize para o lado.
 - **Roteiro do apresentador:** tecla `N`.
 - **Tela cheia:** tecla `F`.
-- **Modo automático (para TV):** tecla `A` ou botão "Automático". Avança sozinho, em loop, com uma barra mostrando o tempo de cada parada. Qualquer navegação manual desliga. Para abrir já no automático, use o endereço terminado em `#auto`.
-- **Ir direto a uma parada:** teclas `1` a `9`, ou um link terminado em `#parada-10`, por exemplo.
+- **Modo automático (para TV):** tecla `A` ou botão "Automático". Avança sozinho, em loop, com uma barra mostrando o tempo de cada parada. Qualquer navegação manual desliga. Para abrir já no automático, use `#auto` (apresentação) ou `#completo-auto` (percurso completo).
+- **Ir direto a uma parada:** teclas `1` a `9` e `0`, ou um link como `#parada-3` (apresentação) ou `#completo-parada-7` (percurso completo).
 
 ## Textos
 
