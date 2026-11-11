@@ -88,6 +88,7 @@ button:focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 3px; }
 .tools { display: flex; gap: 8px; align-items: center; }
 .tool { white-space: nowrap; height: 40px; padding: 0 12px; border: 1px solid var(--hair); border-radius: 2px; font-family: var(--f-display); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); }
 .tool:hover, .tool[aria-pressed="true"] { color: var(--gold-hi); border-color: var(--gold); }
+.tool.route { color: var(--gold); border-color: rgba(217,165,74,.45); }
 #plaque { position: relative; }
 #autobar { position: absolute; left: 0; right: 0; top: 0; height: 3px; background: rgba(239, 230, 211, 0.12); overflow: hidden; }
 #autobar span { display: block; height: 100%; width: 100%; background: var(--gold-hi); transform-origin: 0 50%; transform: scaleX(0); }
@@ -100,6 +101,8 @@ body.autoplay.idle, body.autoplay.idle * { cursor: none !important; }
 @media (max-width: 980px) { .tool kbd { display: none; } .nav .word { display: none; } .nav { padding: 0 12px; } }
 @media (max-aspect-ratio: 1/1), (max-width: 760px) {
   .tools .auto { display: none; }
+  .tool.route { padding: 0 8px; font-size: 10px; letter-spacing: .08em; }
+  .tool.route .wide { display: none; }
   :root { --bar-h: 58px; }
   #plaque-wrap { left: max(12px, env(safe-area-inset-left, 0px)); right: max(12px, env(safe-area-inset-right, 0px)); width: auto; top: auto; height: 44%; bottom: calc(var(--bar-h) + 6px + env(safe-area-inset-bottom, 0px)); }
   #plaque { padding: 16px 18px 14px; height: 100%; box-sizing: border-box; background: var(--plaque-solid); }
@@ -143,6 +146,7 @@ body.autoplay.idle, body.autoplay.idle * { cursor: none !important; }
     <div id="dots"></div>
     <span class="hint">Setas, espaço ou passador de slides</span>
     <div class="tools">
+      <button class="tool route" id="btn-route" type="button">Percurso completo</button>
       <button class="tool auto" id="btn-auto" type="button" aria-pressed="false" title="Avança sozinho pelas paradas, em loop">Automático<kbd>A</kbd></button>
       <button class="tool" id="btn-notes" type="button" aria-pressed="false">Roteiro<kbd>N</kbd></button>
       <button class="tool fs" id="btn-fs" type="button">Tela cheia<kbd>F</kbd></button>
@@ -536,6 +540,13 @@ body.autoplay.idle, body.autoplay.idle * { cursor: none !important; }
   // ---------- controles ----------
   $("next").addEventListener("click", manual(next)); $("prev").addEventListener("click", manual(prev));
   btnAuto.addEventListener("click", function () { setAuto(!auto); });
+  var btnRoute = $("btn-route");
+  btnRoute.innerHTML = ROUTE === "completo" ? "Apresentação" : "<span class=\"wide\">Percurso </span>completo";
+  btnRoute.title = ROUTE === "completo" ? "Volta para o roteiro da apresentação (abertura e cinco atos)" : "Abre o percurso completo, com dez paradas";
+  btnRoute.addEventListener("click", function () {
+    try { history.replaceState(null, "", ROUTE === "completo" ? "#parada-1" : "#completo"); } catch (e) { location.hash = ROUTE === "completo" ? "#parada-1" : "#completo"; }
+    location.reload();
+  });
   var notes = $("notes"), btnNotes = $("btn-notes");
   function toggleNotes() { var on = notes.hidden; notes.hidden = !on; btnNotes.setAttribute("aria-pressed", on ? "true" : "false"); if (on) setTimeout(function () { plaque.scrollTop = plaque.scrollHeight; }, 30); }
   btnNotes.addEventListener("click", toggleNotes);

@@ -5,7 +5,7 @@ Percurso interativo pela *Escola de Atenas*, afresco de Rafael Sanzio (1509 a 15
 A página tem dois roteiros:
 
 - **Apresentação (padrão):** abertura e cinco atos. Uma escola que nunca existiu; Ato I, Pitágoras; Ato II, Sócrates; Ato III, Euclides; Ato IV, Hipátia de Alexandria; Ato V, Platão e Aristóteles. Endereço: `olimarborges.github.io/escola-de-atenas/`
-- **Percurso completo:** dez paradas, com Heráclito, Protágoras e os sofistas, Diógenes, Ptolomeu e o fim com as linhas de perspectiva. Endereço: `olimarborges.github.io/escola-de-atenas/#completo`
+- **Percurso completo:** dez paradas, com Heráclito, Protágoras e os sofistas, Diógenes, Ptolomeu e o fim com as linhas de perspectiva. Endereço: `olimarborges.github.io/escola-de-atenas/#completo`, ou o botão "Percurso completo" na barra (no percurso completo, o botão "Apresentação" volta ao roteiro).
 
 Feito para a sala de matemática e geometria da semana da ciência e da filosofia da Acrópole.
 
