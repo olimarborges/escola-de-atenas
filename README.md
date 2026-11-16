@@ -2,8 +2,9 @@
 
 Percurso interativo pela *Escola de Atenas*, afresco de Rafael Sanzio (1509 a 1511, Palácio Apostólico, Vaticano). A câmera entra na pintura e para diante dos personagens.
 
-A página tem dois roteiros:
+A página tem três roteiros:
 
+- **Slides:** a apresentação completa (22 slides, iguais ao PowerPoint). Nos slides 9 a 14, o slide aparece inteiro, encolhe para o lado e a câmera entra na pintura no ato correspondente (Pitágoras, Sócrates, Euclides com Ptolomeu e Zoroastro, Hipátia, Hipátia de perto, Platão e Aristóteles). Do slide 15 em diante, segue só com os slides. Endereço: `olimarborges.github.io/escola-de-atenas/#slides`, ou o botão "Slides" na barra. Teclas: setas, espaço ou passador para avançar e voltar, `S` para alternar entre o slide inteiro e o 3D, `F` para tela cheia e `B` para tela preta.
 - **Apresentação (padrão):** abertura e cinco atos. Uma escola que nunca existiu; Ato I, Pitágoras; Ato II, Sócrates; Ato III, Euclides; Ato IV, Hipátia de Alexandria; Ato V, Platão e Aristóteles. Endereço: `olimarborges.github.io/escola-de-atenas/`
 - **Percurso completo:** dez paradas, com Heráclito, Protágoras e os sofistas, Diógenes, Ptolomeu e o fim com as linhas de perspectiva. Endereço: `olimarborges.github.io/escola-de-atenas/#completo`, ou o botão "Percurso completo" na barra (no percurso completo, o botão "Apresentação" volta ao roteiro).
 
