@@ -692,6 +692,7 @@ body.slides-mode #bar, body.slides-mode #plaque-wrap { display: none; }
     document.body.classList.add("slides-mode");
     deck.hidden = false;
     $("loading").classList.add("done");
+    sbox.style.transition = "none"; placeBox(); void sbox.offsetWidth; sbox.style.transition = "";
     var mh = /^#slides-(\d+)$/.exec(location.hash || "");
     slideIdx = 0;
     showSlide(mh ? +mh[1] : 1);
